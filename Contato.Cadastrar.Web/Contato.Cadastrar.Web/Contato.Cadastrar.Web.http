@@ -1,0 +1,6 @@
+@Contato.Cadastrar.Web_HostAddress = http://localhost:5143
+
+GET {{Contato.Cadastrar.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

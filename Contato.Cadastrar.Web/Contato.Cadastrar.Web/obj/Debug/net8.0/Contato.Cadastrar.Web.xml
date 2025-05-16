@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Contato.Cadastrar.Web</name>
+    </assembly>
+    <members>
+        <member name="M:Contato.Cadastrar.Web.Controllers.ContatoController.CadastrarContato(Contato.Cadastrar.Application.Dtos.CadastrarContatoDto)">
+            <summary>
+            Enviar um contato para a fila de cadastro.
+            </summary>
+            <param name="dto">Dados do contato a serem cadastrados.</param>
+            <returns>Retorna o ID do contato a ser criado e a data da requisição.</returns>
+            <response code="200">Contato enviado para fila de cadastro com sucesso</response>
+            <response code="400">Dados inválidos</response>
+        </member>
+    </members>
+</doc>

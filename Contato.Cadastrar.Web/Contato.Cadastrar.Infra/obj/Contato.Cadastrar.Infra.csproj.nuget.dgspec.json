@@ -1,0 +1,212 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Infra\\Contato.Cadastrar.Infra.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Application\\Contato.Cadastrar.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Application\\Contato.Cadastrar.Application.csproj",
+        "projectName": "Contato.Cadastrar.Application",
+        "projectPath": "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Application\\Contato.Cadastrar.Application.csproj",
+        "packagesPath": "C:\\Users\\rafin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "C:\\Users\\rafin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Domain\\Contato.Cadastrar.Domain.csproj": {
+                "projectPath": "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Domain\\Contato.Cadastrar.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Domain\\Contato.Cadastrar.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Domain\\Contato.Cadastrar.Domain.csproj",
+        "projectName": "Contato.Cadastrar.Domain",
+        "projectPath": "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Domain\\Contato.Cadastrar.Domain.csproj",
+        "packagesPath": "C:\\Users\\rafin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "C:\\Users\\rafin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Infra\\Contato.Cadastrar.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Infra\\Contato.Cadastrar.Infra.csproj",
+        "projectName": "Contato.Cadastrar.Infra",
+        "projectPath": "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Infra\\Contato.Cadastrar.Infra.csproj",
+        "packagesPath": "C:\\Users\\rafin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "C:\\Users\\rafin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Application\\Contato.Cadastrar.Application.csproj": {
+                "projectPath": "C:\\Users\\rafin\\RiderProjects\\fiap-postech-net-tech-challenge-04-cadastro\\Contato.Cadastrar.Web\\Contato.Cadastrar.Application\\Contato.Cadastrar.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

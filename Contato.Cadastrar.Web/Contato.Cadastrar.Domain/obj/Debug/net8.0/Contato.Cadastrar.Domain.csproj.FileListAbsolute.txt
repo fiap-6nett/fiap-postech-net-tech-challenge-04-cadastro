@@ -1,0 +1,12 @@
+C:\Users\rafin\RiderProjects\fiap-postech-net-tech-challenge-04-cadastro\Contato.Cadastrar.Web\Contato.Cadastrar.Domain\bin\Debug\net8.0\Contato.Cadastrar.Domain.deps.json
+C:\Users\rafin\RiderProjects\fiap-postech-net-tech-challenge-04-cadastro\Contato.Cadastrar.Web\Contato.Cadastrar.Domain\bin\Debug\net8.0\Contato.Cadastrar.Domain.dll
+C:\Users\rafin\RiderProjects\fiap-postech-net-tech-challenge-04-cadastro\Contato.Cadastrar.Web\Contato.Cadastrar.Domain\bin\Debug\net8.0\Contato.Cadastrar.Domain.pdb
+C:\Users\rafin\RiderProjects\fiap-postech-net-tech-challenge-04-cadastro\Contato.Cadastrar.Web\Contato.Cadastrar.Domain\obj\Debug\net8.0\Contato.Cadastrar.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rafin\RiderProjects\fiap-postech-net-tech-challenge-04-cadastro\Contato.Cadastrar.Web\Contato.Cadastrar.Domain\obj\Debug\net8.0\Contato.Cadastrar.Domain.AssemblyInfoInputs.cache
+C:\Users\rafin\RiderProjects\fiap-postech-net-tech-challenge-04-cadastro\Contato.Cadastrar.Web\Contato.Cadastrar.Domain\obj\Debug\net8.0\Contato.Cadastrar.Domain.AssemblyInfo.cs
+C:\Users\rafin\RiderProjects\fiap-postech-net-tech-challenge-04-cadastro\Contato.Cadastrar.Web\Contato.Cadastrar.Domain\obj\Debug\net8.0\Contato.Cadastrar.Domain.csproj.CoreCompileInputs.cache
+C:\Users\rafin\RiderProjects\fiap-postech-net-tech-challenge-04-cadastro\Contato.Cadastrar.Web\Contato.Cadastrar.Domain\obj\Debug\net8.0\Contato.Cadastrar.Domain.sourcelink.json
+C:\Users\rafin\RiderProjects\fiap-postech-net-tech-challenge-04-cadastro\Contato.Cadastrar.Web\Contato.Cadastrar.Domain\obj\Debug\net8.0\Contato.Cadastrar.Domain.dll
+C:\Users\rafin\RiderProjects\fiap-postech-net-tech-challenge-04-cadastro\Contato.Cadastrar.Web\Contato.Cadastrar.Domain\obj\Debug\net8.0\refint\Contato.Cadastrar.Domain.dll
+C:\Users\rafin\RiderProjects\fiap-postech-net-tech-challenge-04-cadastro\Contato.Cadastrar.Web\Contato.Cadastrar.Domain\obj\Debug\net8.0\Contato.Cadastrar.Domain.pdb
+C:\Users\rafin\RiderProjects\fiap-postech-net-tech-challenge-04-cadastro\Contato.Cadastrar.Web\Contato.Cadastrar.Domain\obj\Debug\net8.0\ref\Contato.Cadastrar.Domain.dll

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Contato.Cadastrar.Web.props" />
+</Project>

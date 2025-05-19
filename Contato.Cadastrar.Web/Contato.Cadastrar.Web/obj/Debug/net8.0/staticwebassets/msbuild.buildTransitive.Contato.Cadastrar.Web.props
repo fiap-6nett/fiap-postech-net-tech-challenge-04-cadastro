@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Contato.Cadastrar.Web.props" />
-</Project>

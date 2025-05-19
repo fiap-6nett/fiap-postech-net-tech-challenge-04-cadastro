@@ -1,13 +1,47 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-# Rider ignored files
-/.idea.fiap-postech-net-tech-challenge-04-cadastro.iml
-/contentModel.xml
-/projectSettingsUpdater.xml
-/modules.xml
-# Editor-based HTTP Client requests
-/httpRequests/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
+# Build results
+bin/
+obj/
+out/
+*.dll
+*.exe
+*.pdb
+*.app
+*.log
+*.cache
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Pastas de build (obj, Debug, Release)
+**/obj/
+**/Debug/
+**/Release/
+
+# Rider
+.idea/
+*.sln.iml
+
+# Visual Studio (caso abra o projeto por lá também)
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*.userosscache
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Database files
+*.dbmdl
+*.bak
+*.sql
+
+# DotCover and ReSharper
+*.dotCover
+*.resharper
+_ReSharper*/

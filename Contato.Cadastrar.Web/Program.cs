@@ -4,6 +4,7 @@ using Contato.Cadastrar.Application.Services;
 using Contato.Cadastrar.Infra.RabbitMq;
 
 var builder = WebApplication.CreateBuilder(args);
+Console.WriteLine($"Ambiente atual: {builder.Environment.EnvironmentName}");
 
 // Add services to the container.
 

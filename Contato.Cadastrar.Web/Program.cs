@@ -27,18 +27,10 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(xmlPath);
 });
 
-builder.WebHost.ConfigureKestrel(options =>
-{
-    options.ListenAnyIP(8080); // <- se isso estiver presente, ele define a porta diretamente
-});
+// Define a porta HTTP
+builder.WebHost.UseUrls("http://*:8080");
 
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseHttpsRedirection();
-}
 
 app.UseSwagger();
 app.UseSwaggerUI();

@@ -19,7 +19,6 @@ builder.Services.AddSingleton<IRabbitMqProducer, RabbitMqProducer>();
 
 builder.Services.AddScoped<IContatoService, ContatoService>();
 
-
 builder.Services.AddSwaggerGen(options =>
 {
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
@@ -32,18 +31,20 @@ builder.WebHost.UseUrls("http://*:8080");
 
 var app = builder.Build();
 
+// (Opcional) Habilitar CORS para liberar requisições de qualquer origem
+app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.UseAuthorization();
-
-// Middleware Prometheus para requisições HTTP
+// Middleware Prometheus para requisições HTTP — deve vir antes da autorização
 app.UseHttpMetrics();
 
-// Endpoints das métricas
-app.MapMetrics(); // Exposição do /metrics
-
+app.UseAuthorization();
 
 app.MapControllers();
+
+// Mapear /metrics depois dos controllers para evitar conflitos de rota
+app.MapMetrics();
 
 app.Run();

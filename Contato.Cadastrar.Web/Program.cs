@@ -2,6 +2,7 @@ using System.Reflection;
 using Contato.Cadastrar.Application.Interfaces;
 using Contato.Cadastrar.Application.Services;
 using Contato.Cadastrar.Infra.RabbitMq;
+using Prometheus;
 
 var builder = WebApplication.CreateBuilder(args);
 Console.WriteLine($"Ambiente atual: {builder.Environment.EnvironmentName}");
@@ -42,8 +43,14 @@ if (app.Environment.IsDevelopment())
 app.UseSwagger();
 app.UseSwaggerUI();
 
-
 app.UseAuthorization();
+
+// Middleware Prometheus para requisições HTTP
+app.UseHttpMetrics();
+
+// Endpoints das métricas
+app.MapMetrics(); // Exposição do /metrics
+
 
 app.MapControllers();
 

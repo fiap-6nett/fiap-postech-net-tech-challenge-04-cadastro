@@ -34,22 +34,19 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: 🏗️ Build da imagem Docker com tag "latest"
-        run: |
-          echo "Building image: $DOCKER_IMAGE:$DOCKER_TAG"
-          docker build -t $DOCKER_IMAGE:$DOCKER_TAG .
+        run: docker build -t $DOCKER_IMAGE:$DOCKER_TAG .
 
       - name: 🚀 Push da imagem para o Docker Hub
-        run: |
-          docker push $DOCKER_IMAGE:$DOCKER_TAG
+        run: docker push $DOCKER_IMAGE:$DOCKER_TAG
 
-      - name: ⚙️ Configurar kubectl
+      - name: 🔐 Login no Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: ⚙️ Obter credenciais do AKS
         run: |
-          mkdir -p $HOME/.kube
-          echo "${{ secrets.KUBE_CONFIG_DATA }}" | base64 -d > $HOME/.kube/config
-          kubectl version --client
+          az aks get-credentials --resource-group ${{ secrets.AZURE_RG }} --name ${{ secrets.AZURE_AKS_CLUSTER }} --overwrite-existing
 
       - name: 🚀 Aplicar manifestos no cluster Kubernetes
-        run: |
-          kubectl apply -f ./k8s/deployment.yaml
-
-          
+        run: kubectl apply -f ./k8s/

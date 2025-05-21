@@ -1,0 +1,55 @@
+name: CI/CD - Push na master + deploy Kubernetes
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-push-deploy:
+    runs-on: ubuntu-latest
+    env:
+      DOCKER_IMAGE: wesley2019/create-api
+      DOCKER_TAG: latest
+
+    steps:
+      - name: 🔄 Checkout do código
+        uses: actions/checkout@v3
+
+      - name: ⚙️ Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: 🔁 Restore dependências
+        run: dotnet restore Contato.Atualizar.sln
+
+      - name: 🛠️ Build da aplicação
+        run: dotnet build Contato.Atualizar.sln --configuration Release --no-restore
+
+      - name: 🐳 Login no Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: 🏗️ Build da imagem Docker com tag "latest"
+        run: |
+          echo "Building image: $DOCKER_IMAGE:$DOCKER_TAG"
+          docker build -t $DOCKER_IMAGE:$DOCKER_TAG .
+
+      - name: 🚀 Push da imagem para o Docker Hub
+        run: |
+          docker push $DOCKER_IMAGE:$DOCKER_TAG
+
+      - name: ⚙️ Configurar kubectl
+        run: |
+          mkdir -p $HOME/.kube
+          echo "${{ secrets.KUBE_CONFIG_DATA }}" | base64 -d > $HOME/.kube/config
+          kubectl version --client
+
+      - name: 🚀 Aplicar manifestos no cluster Kubernetes
+        run: |
+          kubectl apply -f ./k8s/deployment.yaml
+
+          

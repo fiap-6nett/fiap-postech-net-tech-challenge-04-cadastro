@@ -18,7 +18,7 @@ public class ContatoController : ControllerBase
 
 
     /// <summary>
-    /// Enviar um contato para a fila de cadastro testando.
+    /// Enviar um contato para a fila de cadastro corrigido.
     /// </summary>
     /// <param name="dto">Dados do contato a serem cadastrados.</param>
     /// <returns>Retorna o ID do contato a ser criado e a data da requisição.</returns>

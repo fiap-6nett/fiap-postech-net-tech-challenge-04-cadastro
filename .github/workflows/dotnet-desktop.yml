@@ -52,4 +52,4 @@ jobs:
         run: kubectl apply -f ./k8s/
 
       - name: 🔄 Reiniciar o deployment (forçar update da imagem)
-        run: kubectl rollout restart deployment create-api-deployment -n fase4
+        run: kubectl rollout restart deployment/create-api-deployment -n fase4

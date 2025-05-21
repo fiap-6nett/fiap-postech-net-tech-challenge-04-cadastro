@@ -22,10 +22,10 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: 🔁 Restore dependências
-        run: dotnet restore Contato.Atualizar.sln
+        run: dotnet restore Contato.Cadastrar.sln
 
       - name: 🛠️ Build da aplicação
-        run: dotnet build Contato.Atualizar.sln --configuration Release --no-restore
+        run: dotnet build Contato.Cadastrar.sln --configuration Release --no-restore
 
       - name: 🐳 Login no Docker Hub
         uses: docker/login-action@v3

@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: create-api-service
   namespace: fase4
+  annotations:
+    service.beta.kubernetes.io/azure-dns-label-name: createapi-fase4
 spec:
   selector:
     app: create-api

@@ -1,4 +1,4 @@
-name: CI/CD - Push na master + deploy Kubernetes
+name: CI/CD - Push na main + deploy Kubernetes
 
 on:
   push:
